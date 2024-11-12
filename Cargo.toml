@@ -13,6 +13,7 @@ axum = { version = "0.7", optional = true }
 console_error_panic_hook = "0.1"
 leptos_axum = { version = "0.7.0-rc1", optional = true }
 leptos_meta = { version = "0.7.0-rc1" }
+reactive_stores = { version="0.1.0-rc1"}
 tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
 tower = { version = "0.4", optional = true }
 tower-http = { version = "0.5", features = ["fs"], optional = true }
@@ -63,10 +64,10 @@ style-file = "style/main.scss"
 assets-dir = "public"
 
 # The IP and port (ex: 127.0.0.1:3000) where the server serves the content. Use it in your server setup.
-site-addr = "127.0.0.1:3000"
+site-addr = "127.0.0.1:3035"
 
 # The port to use for automatic reload monitoring
-reload-port = 3001
+reload-port = 3036
 
 # [Optional] Command to use when running end2end tests. It will run in the end2end dir.
 #   [Windows] for non-WSL use "npx.cmd playwright test"
